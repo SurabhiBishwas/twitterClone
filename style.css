@@ -1,0 +1,615 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 26% 39% 35%;
+}
+.leftDiv
+{
+    width: 99.8%;
+    height: 760px;
+}
+.navBar
+{
+    width: 30%;
+    position: fixed;
+    margin:0 auto;
+}
+.logo
+{
+    padding: 4% 0 4% 33%;
+}
+.logo i
+{
+    font-size: 33px;
+    color: #088de6e7;
+}
+.nav
+{
+    display: grid;
+}
+.nav div a
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 15px 18px;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.nav div
+{
+    padding: 2% 0 4% 30%;
+}
+.nav div a i
+{
+    padding: 0 20px 0 0;
+}
+.nav div a:hover
+{
+    background: rgba(182, 170, 170, 0.301);
+}
+.nav button
+{
+    padding: 15px 90px;
+    margin-bottom: 70px;
+    border-radius: 30px;
+    outline: none;
+    background: #00a7ff;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nav button:hover
+{
+    background: #0093ff;
+    transition: 0.1s;
+}
+
+.midDiv
+{
+    width: 99.6%;
+    border-right: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    background: white;
+}
+.logOut div
+{
+    float: left;
+    padding: 0;
+}
+.logOut img
+{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.logOut .userName
+{
+    margin-right: 7px;
+    margin-left: 5px;
+}
+.logOut .userName i
+{
+    font-size: 20px;
+}
+.logOut .userName .p2
+{
+    color: grey;
+}
+.logOut .dot
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.midDivHeader
+{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+.midDivHeader span a
+{
+    padding-left: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+}
+.midDivHeader span i
+{
+    padding-right: 10px;
+    font-size: 18px;
+    color: black;
+}
+/* .tweet
+{
+    max-height: 704px; */
+    /* overflow-y: hidden; */
+/* } */
+/* .tweet:hover
+{
+    overflow-y: auto;
+} */
+.postTweet
+{
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    height: 125px;
+}
+.profileTweet
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left:18px;
+    padding-top: 8px;
+}
+.profileTweet img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.profileTweet img:hover
+{
+    opacity: 1;
+}
+.profileTweet span input
+{
+    font-size: 21px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.postExtra
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.postExtraIcons
+{
+    margin-left: 80px;
+    margin-top: 15px;
+}
+.postExtraIcons span a
+{
+    text-decoration: none;
+    color: #1d9bf0;
+    font-size: 17px;
+    padding: 8px 8px;
+    border-radius: 50%;
+}
+.postExtraIcons span a:hover
+{
+    background: #e1f5ff;
+}
+.postExtra span button
+{
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #00a7ff;
+    font-size: 16px;
+    color: white;
+    opacity: 0.5;
+    font-weight: 700;
+}
+.postExtra span button:hover
+{
+    background: #0093ff;
+}
+.othersTweet
+{
+    width: 100%;
+}
+.eachTweet
+{
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+.eachTweet:hover
+{
+    cursor: pointer;
+    background-color: #e8e8e8;
+}
+.profileTweet
+{
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    margin: 0 0 10px 0;
+    align-items: center;
+}
+.eachProfilePhoto
+{
+    padding: 0 0 40px 10px;
+}
+.eachProfilePhoto img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.eachProfilePhoto img:hover
+{
+    opacity: 1;
+}
+.eachTweet span i
+{
+    padding: 0 4px 0 4px;
+    color: #00a7ff;
+    font-size: 20px
+}
+.eachTweet
+{
+    cursor: pointer;
+}
+.eachTweet span p
+{
+    color: #5d5d5d;
+}
+.eachTweet span b
+{
+    color: black;
+}
+.msg
+{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0 0 0;
+    text-align: justify;
+    text-justify: inter-word;
+    word-wrap: break-word;
+}
+.eachTweet span b:hover
+{
+    text-decoration: underline;
+}
+.moreOptions
+{
+    margin-bottom: 50px;
+    margin-left: 25px;
+    cursor: pointer;
+    color:grey;
+    opacity: 0.8;
+}
+.imageVideo
+{
+    margin: 0 0 0 12%;
+}
+.imageVideo img
+{
+    border-radius: 20px;
+    border: 1px solid #e8e8e8;
+    width: 90%;
+    max-height: 280px;
+}
+.reactionIcons
+{
+    margin: 2% 0 2% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    opacity: 0.6;
+}
+.reactionIcons div
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.reactionIcons div p
+{
+    padding: 0 0 0 5px;
+    font-size: 14px;
+}
+.reactionIcons div i
+{
+    font-size: 18px;
+    padding: 5px 5px;
+    border-radius: 50%;
+}
+.comment:hover
+{
+    color: #00a7ff;
+}
+.retweet:hover
+{
+    color: green;
+}
+.like:hover
+{
+    color: #ff0281;
+}
+.bookmark:hover
+{
+    color: #00a7ff;
+}
+.rightDiv
+{
+    width: 100%;
+}
+.trendingAndFollow
+{
+    width: 67%;
+    margin: 0 0 0 35px;
+}
+.search
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    align-items: center;
+    z-index: 1000;
+}
+.search input
+{
+    width: 100%;
+    height: 45px;
+    margin: 1% 0 0 0;
+    border-color: transparent;
+    border-radius: 30px;
+    outline: none;
+    background: #eff3f4;
+    padding: 0 10px 0 50px;
+    font-size: 15px;
+    color: #454545;
+    letter-spacing: 1px;
+}
+.search span
+{
+    position: absolute;
+    left: 7%;
+    top: 12px;
+    font-size: 20px;
+    color: #454545ea;
+    opacity: 0.5;
+}
+.trending, .follow
+{
+    width: 100%;
+    background-color: #eff3f496;
+    border-radius: 20px;
+    margin: 10px 0 20px 0;
+}
+.trendingAndFollowHeader
+{
+    width: 100%;
+    height: 70px;
+}
+.trendingAndFollowHeader p
+{
+    padding: 15px 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+}
+.trends, .profile
+{
+    width: 100%;
+}
+.eachTrend
+{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+.trendDetails
+{
+    margin: 0 0 2px 20px;
+}
+.trendName
+{
+    margin: 0 0 4px 0;
+    cursor: pointer;
+}
+.trendName p, .trendWith p
+{
+    font-size: 13px;
+    opacity: 0.6;
+}
+.trendWith
+{
+    margin: 0 0 2px 0;
+    cursor: pointer;
+}
+.trendDesc p
+{
+    font-size: 15px;
+    font-weight: 600;
+    text-justify: inter-word;
+    word-wrap: break-word;
+    margin: 0 0 2px 0;
+    cursor: pointer;
+}
+.trendWith p a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: #00a7ff;
+}
+.trendWith p a:hover
+{
+    text-decoration: underline;
+    opacity: 1;
+}
+.trendPicture
+{
+    padding: 10px 0;
+}
+.trendPicture img
+{
+    width: 70px;
+    height:70px;
+    border-radius:20px;
+}
+.eachTrend:hover, .eachProfile:hover
+{
+    background: #e8e8e8;
+    opacity: 0.8;
+}
+.showMore
+{
+    padding: 20px 20px;
+}
+.showMore a
+{
+    text-decoration: none;
+    color: #00a7ff
+}
+.showMore:hover
+{
+    background: #e8e8e8;
+    border-radius: 0 0 20px 20px;
+}
+.eachProfile
+{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    padding: 10px 0;
+    align-items: center;
+}
+.followProfilePhoto
+{
+    padding: 0 0 0 10px;
+}
+.followProfilePhoto img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.followProfilePhoto img:hover
+{
+    opacity: 1;
+}
+.followersName p
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+.followName h3
+{
+    font-size: 16px;
+}
+.followName p
+{
+    opacity: 0.6;
+    padding: 5px 0 0 0;
+}
+.followBtn button
+{
+    padding: 5px 20px;
+    outline: none;
+    border: 2px solid black;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+/* .footer
+{
+    position: -webkit-sticky; /* Safari & IE */
+    /* position: sticky;
+    top: 25;
+    z-index: 1; */
+/* } */
+.footer p
+{
+    color: #454545;
+    padding: 15px 15px;
+    font-size: 13px;
+}
+
+.footer a
+{  cursor: pointer;
+    margin-right: 11px;
+    margin-bottom: 11px;
+}
+.footer a:hover
+{  
+    text-decoration: underline;
+}
+@media (max-width:1450px)
+{
+    .nav span
+    {
+        display: none;
+    }
+    .nav button
+    {
+        padding: 10px 10px;
+    } 
+    .container
+    {
+        grid-template-columns: 10% 50% 40%;
+    }
+    .navBar
+    {
+        width:99.6%
+    }
+    .nav div a
+    {
+        padding: 0;
+        border-radius: 50%;
+    }
+    .profileTweet
+    {
+        grid-template-columns: 25% 40% 35%;
+    }
+}
+
+@media(max-width:960px)
+{
+    .leftDiv
+    {
+        display: none;
+    }
+    .rightDiv
+    {
+        display: none;
+    }
+    .container
+    {
+        grid-template-columns: 100%;
+    }
+    .profileTweet
+    {
+        grid-template-columns: 20% 60% 20%;
+    }
+}
