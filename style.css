@@ -230,12 +230,12 @@
 }
 .eachTweet
 {
+    cursor: pointer;
     width: 100%;
     border-bottom: 1px solid #e8e8e8;
 }
 .eachTweet:hover
 {
-    cursor: pointer;
     background-color: #e8e8e8;
 }
 .profileTweet
@@ -261,21 +261,17 @@
 {
     opacity: 1;
 }
-.eachTweet span i
+.tweetDesc span i
 {
     padding: 0 4px 0 4px;
     color: #00a7ff;
     font-size: 20px
 }
-.eachTweet
-{
-    cursor: pointer;
-}
-.eachTweet span p
+.tweetDesc span p
 {
     color: #5d5d5d;
 }
-.eachTweet span b
+.tweetDesc span b
 {
     color: black;
 }
@@ -289,7 +285,7 @@
     text-justify: inter-word;
     word-wrap: break-word;
 }
-.eachTweet span b:hover
+.tweetDesc span b:hover
 {
     text-decoration: underline;
 }
@@ -542,13 +538,11 @@
     font-size: 17px;
     text-transform: capitalize;
 }
-/* .footer
+.footer:current
 {
-    position: -webkit-sticky; /* Safari & IE */
-    /* position: sticky;
-    top: 25;
-    z-index: 1; */
-/* } */
+    position:fixed;
+    bottom:50px;
+}
 .footer p
 {
     color: #454545;
