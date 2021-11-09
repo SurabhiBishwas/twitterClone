@@ -126,9 +126,24 @@
     background: white;
     z-index: 1000;
 }
+.midDivFooter
+{
+    display: none;
+}
+.midDivHeader img
+{
+    display: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 .midDivHeader span a
 {
     padding-left: 12px;
+    padding-bottom: 15px;
     text-decoration: none;
     color: black;
     font-weight: 800;
@@ -139,6 +154,10 @@
     padding-right: 10px;
     font-size: 18px;
     color: black;
+}
+.newTweetIcon
+{
+    display: none;
 }
 /* .tweet
 {
@@ -590,20 +609,96 @@
 
 @media(max-width:960px)
 {
-    .leftDiv
+    .leftDiv, .postTweet, .rightDiv
     {
         display: none;
     }
-    .rightDiv
+    .midDivHeader img
     {
-        display: none;
+        margin-left: 12px;
+        display: block;
     }
+    .midDivHeader
+    {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
+    .midDivHeader span i
+    {
+        padding-left: 230px;
+    }
+    .midDivFooter
+    {
+        display: block;
+        width:100%;
+        height: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+        border-top: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+        position: fixed;
+        bottom: 0;
+        background: white;
+        z-index: 1000;
+        font-size: 20px;
+    }
+    .newTweetIcon
+    {
+        display: block;
+        border-color: black;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 65px;
+        right:20px;
+        z-index: 2000;
+    }   
     .container
     {
         grid-template-columns: 100%;
     }
     .profileTweet
     {
-        grid-template-columns: 20% 60% 20%;
+        display: grid;
+        margin: 0 0 10px 0;
+        align-items: center;
+        grid-template-columns: 14% 76% 10%;
+    }
+    .eachProfilePhoto
+    {
+        padding: 0 0 80px 0;
+    }
+    .eachProfilePhoto img
+    {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .moreOptions
+    {
+        margin-bottom: 75px;
+        margin-left: 10px;
+    }
+    .fTweetDesc
+    {
+        margin-bottom: 30px;
+    }
+    .tweetDesc span p
+    {
+        font-size: 13px;
+    }
+    .msg
+    {
+        font-size: 14px;
+    }
+    .tweetDesc span i
+    {
+        font-size: 18px;
     }
 }
