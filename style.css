@@ -578,7 +578,7 @@
 {  
     text-decoration: underline;
 }
-@media (max-width:1450px)
+/* @media (max-width:1450px)
 {
     .nav span
     {
@@ -606,7 +606,7 @@
         grid-template-columns: 25% 40% 35%;
     }
 }
-
+ */
 @media(max-width:960px)
 {
     .leftDiv, .postTweet, .rightDiv
