@@ -44,7 +44,7 @@
 }
 .nav div
 {
-    padding: 2% 0 4% 30%;
+    padding: 1.5% 0 4% 30%;
 }
 .nav div a i
 {
@@ -83,7 +83,8 @@
 .logOut div
 {
     float: left;
-    padding: 0;
+    margin-top: -40px;
+    padding: 0px;
 }
 .logOut img
 {
@@ -266,12 +267,12 @@
 }
 .eachProfilePhoto
 {
-    padding: 0 0 40px 10px;
+    padding: 0 0 60px 10px;
 }
 .eachProfilePhoto img
 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     opacity: 0.9;
     cursor: pointer;
@@ -578,35 +579,23 @@
 {  
     text-decoration: underline;
 }
-/* @media (max-width:1450px)
+@media (max-width:1450px)
 {
-    .nav span
+    
+    .nav span.nav button
     {
-        display: none;
-    }
-    .nav button
-    {
-        padding: 10px 10px;
-    } 
-    .container
-    {
-        grid-template-columns: 10% 50% 40%;
-    }
-    .navBar
-    {
-        width:99.6%
-    }
-    .nav div a
-    {
-        padding: 0;
-        border-radius: 50%;
-    }
-    .profileTweet
-    {
-        grid-template-columns: 25% 40% 35%;
+        padding: 15px 90px;
+        border-radius: 30px;
+        outline: none;
+        background: #00a7ff;
+        color: white;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
     }
 }
- */
+
 @media(max-width:960px)
 {
     .leftDiv, .postTweet, .rightDiv
